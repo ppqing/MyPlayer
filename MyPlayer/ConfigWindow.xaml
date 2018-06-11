@@ -1,0 +1,19 @@
+﻿<Window x:Class="MyPlayer.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPlayer"
+        mc:Ignorable="d"
+        Title="设置" Height="250" Width="300" ResizeMode="NoResize">
+    <Grid Name="ConfigGrid" Background="#FFB8B6F4" >
+        <Button Content="确定" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Margin="0,0,0,10" Background="#7FDDDDDD" Click="Button_Click"/>
+        <Border CornerRadius="10" Background="#7FFFFFFF" HorizontalAlignment="Center" Height="150" Margin="0,0,0,30" VerticalAlignment="Center" Width="200">
+            <Grid Height="120" Margin="0" Width="190" >
+                <Label Content="主题颜色:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                <TextBox  Name="ARGB" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="请输入ARGB" VerticalAlignment="Top" Width="131" Margin="10,36,0,0" Background="#7FFFFFFF"/>
+                <Button Content="恢复默认主题" HorizontalAlignment="Center" VerticalAlignment="Top" Width="90" Margin="10,77,90,0" Background="#7FDDDDDD" Click="Button_Click_1"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
